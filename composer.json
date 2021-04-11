@@ -1,0 +1,34 @@
+{
+  "name": "aptof/book-keeping",
+  "description": "Double entry book keeping system for laravel",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Tushar Bakshi",
+      "email": "developer.aptof@outlook.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "Aptof\\BookKeeping\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Aptof\\BookKeeping\\Tests\\": "tests"
+    }
+  },
+  "require-dev": {
+    "orchestra/testbench": "^6.0",
+    "phpunit/phpunit": "^9.5"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Aptof\\BookKeeping\\BookKeepingServiceProvider"
+      ]
+    }
+  }
+}
